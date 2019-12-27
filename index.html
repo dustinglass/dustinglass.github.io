@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <title>Senate Voting Relationships in the 113th Congress (Harvard CS109 Homework 5)</title> -->
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <meta content="David Chouinard" name="author" />
+    <meta name="twitter:card" content="photo">
+    <meta name="twitter:creator" content="@DavidChouinard">
+    <meta name="twitter:title" content="Voting Relationships in the US Senate">
+    <meta name="twitter:image" content="http://static.davidchouinard.com/congress/preview.jpg">
+
+    <meta property="og:title" content="Voting Relationships in the US Senate" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://static.davidchouinard.com/congress/" />
+    <meta property="og:image" content="http://static.davidchouinard.com/congress/preview.jpg" />
+    <meta property="og:site_name" content="David Chouinard" />
+    <meta property="fb:admins" content="798325636" />
+    <meta property="fb:profile_id" content="798325636" />
+
+    <meta name="viewport" content="width=device-width">
+
+    <script>
+    // Give up immediately if SVG isn't supported
+    if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+      window.location.replace("unsupported.html");
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-1523066-7', 'davidchouinard.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Voting Relationships in the US Senate</h1>
+
+      <div id="congress-picker">
+        <label>Congress (years):</label>
+        <select>
+          <option value="116" selected>116th (2019-2020)</option>
+          <option value="115">115th (2017-2018)</option>
+          <option value="114">114th (2015-2016)</option>
+          <option value="113">113th (2013–2014)</option>
+          <option value="112">112th (2011–2012)</option>
+          <option value="111">111th (2009–2010)</option>
+          <option value="110">110th (2007–2008)</option>
+          <option value="109">109th (2005–2006)</option>
+          <option value="108">108th (2003–2004)</option>
+          <!-- <option value="107">107th (2001–2002)</option>
+          <option value="106">106th (1999–2000)</option>
+          <option value="105">105th (1997–1998)</option>
+          <option value="104">104th (1995–1996)</option>
+          <option value="103">103th (1993–1994)</option>
+          <option value="102">102th (1991–1992)</option>
+          <option value="101">101th (1989–1990)</option> -->
+        </select>
+      </div>
+    </header>
+
+    <div id="loading">
+      <span>Loading&hellip;</span>
+    </div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
